@@ -1,0 +1,11 @@
+﻿@model IEnumerable<string>
+
+@if (Model != null && Model.Any())
+{
+    <div class="notifications">
+        @foreach (var msg in Model)
+        {
+            <p class="alert alert-info">@msg</p>
+        }
+    </div>
+}

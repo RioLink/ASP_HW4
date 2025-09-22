@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - ASP_Practice4</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("HeadExtra", required: false)
+</head>
+<body>
+    <header>
+        <h1>Сайт</h1>
+        <partial name="_Nav" />
+    </header>
+
+    <main>
+        @RenderBody()
+
+        <partial name="_Notification" model="@(TempData["Messages"] as IEnumerable<string>)" />
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - ASP_Practice4</p>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

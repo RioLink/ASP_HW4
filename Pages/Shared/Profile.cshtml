@@ -1,0 +1,9 @@
+﻿@page
+@model ASP_HW4.Pages.ProfileModel
+@{
+    ViewData["Title"] = "Профіль користувача";
+}
+
+<h2>@Model.CurrentUser.Name</h2>
+
+<partial name="_UserCard" model="Model.CurrentUser"></partial>

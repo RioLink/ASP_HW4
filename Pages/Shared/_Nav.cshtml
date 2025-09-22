@@ -1,0 +1,10 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> L
+
+<nav>
+    <ul>
+        <li><a href="/">@L["Home"]</a></li>
+        <li><a href="/Users">@L["Users"]</a></li>
+        <li><a href="/Profile">@L["Profile"]</a></li>
+    </ul>
+</nav>
